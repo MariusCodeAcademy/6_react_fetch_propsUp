@@ -10,7 +10,7 @@ Susikurti nauja projekta.
 ## Reikalavimai:
 
 0. Stilizuoti viska su scss
-1. Sukurkite React funkcijinį komponentą pavadinimu PostsList, kuris įkelia duomenis iš šio API: https://dummyjson.com/posts (arba /)
+1. Sukurkite React funkcijinį komponentą pavadinimu PostsList, kuris įkelia duomenis iš šio API: https://dummyjson.com/posts (arba https://dummyjson.com/products)
 2. Naudokite useEffect huką, kad galėtumėte užkrauti API užklausą, kai komponentas yra atvaizduojamas
 3. Duomenis, gautus iš API, saugokite naudodami useState huką
 4. Rodykite straipsnių sąrašą naudodami map metodą posts masyve, gautame iš API
