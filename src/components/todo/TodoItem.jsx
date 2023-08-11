@@ -1,16 +1,16 @@
 export default function TodoItem(props) {
   // destrukturizuoti kad jsx galetumem sakyti tiesiog isDone, title
-  const { id, isDone, title } = props.item;
+  const { isDone, title } = props.item;
   return (
     <li>
       <span
-        onClick={() => {}}
+        onClick={props.onToggle}
         className={isDone ? 'finished pointer' : 'pointer'}
         role='button'
       >
         {title}
       </span>{' '}
-      <button onClick={() => props.onTest(id)}>Delete</button>
+      <button onClick={props.onDelete}>Delete</button>
     </li>
   );
 }
