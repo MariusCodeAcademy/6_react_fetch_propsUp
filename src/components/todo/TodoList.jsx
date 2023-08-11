@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TodoItem from './TodoItem';
+import './todoList.scss';
 
 const initTodos = [
   { id: 1, title: 'Do pushups', isDone: false },
@@ -77,7 +78,7 @@ export default function TodoList() {
   }
 
   return (
-    <div>
+    <div className='todoList'>
       <h2>Todo list</h2>
 
       <fieldset>
@@ -90,7 +91,9 @@ export default function TodoList() {
         />
         <button onClick={handleAddTodo}>Add</button>
       </fieldset>
-      {mainArrayEmpty && <h2>Nera nei vieno todo, pridekite nauja</h2>}
+      {mainArrayEmpty && (
+        <h2 className='noItems'>Nera nei vieno todo, pridekite nauja</h2>
+      )}
       <ul>
         {mainTodoArr.map((tObj) => (
           <TodoItem
