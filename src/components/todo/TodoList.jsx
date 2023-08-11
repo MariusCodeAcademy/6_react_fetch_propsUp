@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import TodoItem from './TodoItem';
 
 const initTodos = [
   { id: 1, title: 'Do pushups', isDone: false },
@@ -88,16 +89,7 @@ export default function TodoList() {
       {mainArrayEmpty && <h2>Nera nei vieno todo, pridekite nauja</h2>}
       <ul>
         {mainTodoArr.map((tObj) => (
-          <li key={tObj.id}>
-            <span
-              onClick={() => handleToggleTodo(tObj.id)}
-              className={tObj.isDone ? 'finished pointer' : 'pointer'}
-              role='button'
-            >
-              {tObj.title}
-            </span>{' '}
-            <button onClick={() => handleDelete(tObj.id)}>Delete</button>
-          </li>
+          <TodoItem key={tObj.id} item={tObj} />
         ))}
       </ul>
     </div>
