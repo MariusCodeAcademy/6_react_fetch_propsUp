@@ -18,7 +18,7 @@ Labai svarbu!!! Nemodifikuoti mainTodoArr
 ]
 */
 
-export default function Todo() {
+export default function TodoList() {
   const [mainTodoArr, setMainTodoArr] = useState(initTodos);
   const [newTodoTitle, setNewTodoTitle] = useState('');
 
