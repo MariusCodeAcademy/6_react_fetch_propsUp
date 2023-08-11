@@ -1,4 +1,4 @@
-import './todoItem.css';
+import './todoItem.scss';
 
 export default function TodoItem(props) {
   // destrukturizuoti kad jsx galetumem sakyti tiesiog isDone, title
